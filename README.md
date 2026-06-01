@@ -14,6 +14,8 @@ The system generates intelligent retail insights such as:
 
 The project uses a FastAPI backend and Streamlit dashboard for real-time monitoring and analytics.
 
+This project was developed as part of the Purplle Tech Challenge 2026 Round 2.
+
 ---
 
 # 🚀 Features
@@ -70,9 +72,6 @@ store-intelligence/
 │
 ├── pipeline/
 │   └── detect.py
-│
-├── sample_videos/
-│   └── store.mp4
 │
 ├── outputs/
 │
@@ -168,4 +167,3 @@ Project screenshots and demo outputs are available inside the `outputs/` folder.
 # 👩‍💻 Author
 
 ## Bukka Rohini
-
