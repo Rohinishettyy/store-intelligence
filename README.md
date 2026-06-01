@@ -53,6 +53,28 @@ This project was developed as part of the Purplle Tech Challenge 2026 Round 2.
 
 ---
 
+# 🏗️ Architectural Decisions
+
+The system was designed using a modular architecture to separate detection, ingestion, analytics, and visualization components.
+
+## Key Design Choices
+
+* YOLOv8 was selected for lightweight real-time person detection performance.
+* FastAPI was used to expose production-style REST APIs with high performance.
+* Streamlit was used for rapid dashboard prototyping and live analytics visualization.
+* Modular analytics services were separated into queue, heatmap, anomaly, and metrics modules for scalability and maintainability.
+* Event-driven ingestion architecture was implemented to simulate real-time retail intelligence pipelines.
+
+The architecture prioritizes:
+
+* Real-time processing
+* Scalability
+* Modular analytics
+* Ease of deployment
+* Rapid AI prototyping
+
+---
+
 # 📂 Project Structure
 
 ```bash
