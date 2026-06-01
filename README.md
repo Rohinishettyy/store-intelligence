@@ -78,7 +78,7 @@ The architecture prioritizes:
 # 📂 Project Structure
 
 ```bash
-store-intelligence/
+STORE-INTELLIGENCE/
 │
 ├── app/
 │   ├── anomaly.py
