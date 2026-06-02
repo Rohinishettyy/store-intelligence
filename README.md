@@ -102,6 +102,9 @@ STORE-INTELLIGENCE/
 ├── README.md
 │
 └── yolov8n.pt
+│
+└── .python-version
+
 ```
 
 ---
