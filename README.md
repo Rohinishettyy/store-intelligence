@@ -87,6 +87,8 @@ STORE-INTELLIGENCE/
 │   ├── main.py
 │   ├── metrics.py
 │   ├── models.py
+    ├── funnel.py
+    ├── health.py
 │   └── queue.py
 │
 ├── dashboard/
@@ -96,6 +98,10 @@ STORE-INTELLIGENCE/
 │   └── detect.py
 │
 ├── outputs/
+│
+├── CHOICES.md/
+│
+├── DESIGN.md/
 │
 ├── requirements.txt
 │
