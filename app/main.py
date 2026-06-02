@@ -5,6 +5,8 @@ from app.metrics import router as metrics_router
 from app.heatmap import router as heatmap_router
 from app.anomaly import router as anomaly_router
 from app.queue import router as queue_router
+from app.health import router as health_router
+from app.funnel import router as funnel_router
 
 app = FastAPI(
     title="Store Intelligence Dashboard API"
@@ -20,6 +22,9 @@ app.include_router(anomaly_router)
 
 app.include_router(queue_router)
 
+app.include_router(health_router)
+
+app.include_router(funnel_router)
 
 @app.get("/")
 def home():
