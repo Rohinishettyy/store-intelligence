@@ -9,23 +9,16 @@ st.set_page_config(
 
 st.title("🛒 Store Intelligence Dashboard")
 
-BASE_URL = "http://127.0.0.1:8000"
+BASE_URL = "http://localhost:8000"
+try:
+    metrics = requests.get(f"{BASE_URL}/stores/STORE_101/metrics").json()
+    queue = requests.get(f"{BASE_URL}/stores/STORE_101/queue").json()
+    heatmap = requests.get(f"{BASE_URL}/stores/STORE_101/heatmap").json()
+    anomalies = requests.get(f"{BASE_URL}/stores/STORE_101/anomalies").json()
+except:
+    st.error("⚠️ Backend not running. Please start FastAPI server.")
+    st.stop()
 
-metrics = requests.get(
-    f"{BASE_URL}/stores/STORE_101/metrics"
-).json()
-
-queue = requests.get(
-    f"{BASE_URL}/stores/STORE_101/queue"
-).json()
-
-heatmap = requests.get(
-    f"{BASE_URL}/stores/STORE_101/heatmap"
-).json()
-
-anomalies = requests.get(
-    f"{BASE_URL}/stores/STORE_101/anomalies"
-).json()
 
 col1, col2, col3, col4 = st.columns(4)
 

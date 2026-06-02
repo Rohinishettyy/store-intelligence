@@ -6,7 +6,7 @@ import uuid
 
 model = YOLO("yolov8n.pt")
 
-cap = cv2.VideoCapture("sample_videos/store.mp4")
+cap = cv2.VideoCapture(0)  
 
 visitor_ids = set()
 visitor_count = 0
